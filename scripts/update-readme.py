@@ -28,6 +28,7 @@ TOPIC_COLORS = {
     "serverless": "EE0000",
     "quay": "EE0000",
     "ansible": "EE0000",
+    "molecule": "EE0000",
     "aap": "EE0000",
     "rhel": "CC0000",
     "rhacm": "EE0000",
