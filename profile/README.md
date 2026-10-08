@@ -37,7 +37,7 @@
     </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/molecule-in-devspaces"><strong>Molecule In Devspaces</strong></a></td>
-      <td><sub><i>No topics set</i></sub></td>
+      <td><img src="https://img.shields.io/badge/ansible-EE0000?style=flat-square" alt="ansible"> <img src="https://img.shields.io/badge/devspaces-EE0000?style=flat-square" alt="devspaces"> <img src="https://img.shields.io/badge/molecule-EE0000?style=flat-square" alt="molecule"> <img src="https://img.shields.io/badge/workshop-8B5CF6?style=flat-square" alt="workshop"></td>
       <td align="center"><a href="https://github.com/amayagil" title="amayagil"><img src="https://avatars.githubusercontent.com/u/3493296?v=4&s=40" width="40" height="40" style="border-radius:50%" alt="amayagil"></a> <a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=40" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
     </tr>
     <tr>
@@ -70,4 +70,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-10-08 12:37 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-10-08 12:41 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
