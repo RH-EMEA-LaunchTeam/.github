@@ -165,7 +165,7 @@ def make_contributor_avatar(contributor):
     profile = contributor["html_url"]
     return (
         f'<a href="{profile}" title="{login}">'
-        f'<img src="{avatar}&s=40" width="40" height="40" '
+        f'<img src="{avatar}&s=120" width="40" height="40" '
         f'style="border-radius:50%" alt="{login}">'
         f"</a>"
     )
