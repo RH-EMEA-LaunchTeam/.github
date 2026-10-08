@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/orgs/RH-EMEA-LaunchTeam/repositories">
-    <img src="https://img.shields.io/badge/workshops-3-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
+    <img src="https://img.shields.io/badge/workshops-4-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
   </a>
 </p>
 
@@ -34,6 +34,11 @@
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/dev-spaces-workshop"><strong>Dev Spaces Workshop</strong></a><br/><sub>Hands-on workshop for Java development on OpenShift Dev Spaces</sub></td>
       <td><img src="https://img.shields.io/badge/devspaces-EE0000?style=flat-square" alt="devspaces"> <img src="https://img.shields.io/badge/java-F89820?style=flat-square" alt="java"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/workshop-8B5CF6?style=flat-square" alt="workshop"></td>
       <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=40" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/RH-EMEA-LaunchTeam/molecule-in-devspaces"><strong>Molecule In Devspaces</strong></a></td>
+      <td><sub><i>No topics set</i></sub></td>
+      <td align="center"><a href="https://github.com/amayagil" title="amayagil"><img src="https://avatars.githubusercontent.com/u/3493296?v=4&s=40" width="40" height="40" style="border-radius:50%" alt="amayagil"></a> <a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=40" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
     </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/multi-cluster-app-distribution-demo"><strong>Multi Cluster App Distribution Demo</strong></a></td>
@@ -65,4 +70,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-10-08 12:17 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-10-08 12:37 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
