@@ -68,7 +68,11 @@ TOPIC_COLORS = {
     "hands-on": "8B5CF6",
     "ai": "FF6F00",
     "machine-learning": "FF6F00",
+    "cursor-skills": "2D9CDB",
+    "resource": "6C757D",
 }
+
+RESOURCE_TOPIC = "resource"
 
 DEFAULT_COLOR = "1A73E8"
 
@@ -176,7 +180,60 @@ def humanize_name(repo_name):
     return repo_name.replace("-", " ").title()
 
 
-def generate_readme(repos):
+def build_repo_row(repo, topics, contributors):
+    """Build an HTML table row for a single repo."""
+    name = repo["name"]
+    url = repo["html_url"]
+    description = repo.get("description") or ""
+
+    name_cell = f'<a href="{url}"><strong>{humanize_name(name)}</strong></a>'
+    if description:
+        name_cell += f"<br/><sub>{description}</sub>"
+
+    display_topics = [t for t in topics if t != RESOURCE_TOPIC]
+    if display_topics:
+        badges_html = " ".join(make_badge(t) for t in display_topics)
+    else:
+        badges_html = "<sub><i>No topics set</i></sub>"
+
+    if contributors:
+        avatars_html = " ".join(
+            make_contributor_avatar(c) for c in contributors[:10]
+        )
+    else:
+        avatars_html = "<sub><i>—</i></sub>"
+
+    return (
+        "    <tr>\n"
+        f"      <td>{name_cell}</td>\n"
+        f"      <td>{badges_html}</td>\n"
+        f'      <td align="center">{avatars_html}</td>\n'
+        "    </tr>"
+    )
+
+
+def build_table(repos, repo_data, first_col_name="Workshop"):
+    """Build an HTML table for a list of repos."""
+    lines = [
+        "<table>",
+        "  <thead>",
+        "    <tr>",
+        f'      <th align="left">{first_col_name}</th>',
+        '      <th align="left">Topics</th>',
+        '      <th align="center">Contributors</th>',
+        "    </tr>",
+        "  </thead>",
+        "  <tbody>",
+    ]
+    for repo in sorted(repos, key=lambda r: r["name"].lower()):
+        topics, contributors = repo_data[repo["name"]]
+        lines.append(build_repo_row(repo, topics, contributors))
+    lines.append("  </tbody>")
+    lines.append("</table>")
+    return lines
+
+
+def generate_readme(workshops, resources, repo_data):
     """Generate the full README markdown content."""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -191,7 +248,7 @@ def generate_readme(repos):
         "",
         '<p align="center">',
         f'  <a href="https://github.com/orgs/{ORG}/repositories">',
-        f'    <img src="https://img.shields.io/badge/workshops-{len(repos)}-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">',
+        f'    <img src="https://img.shields.io/badge/workshops-{len(workshops)}-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">',
         "  </a>",
         "</p>",
         "",
@@ -201,52 +258,19 @@ def generate_readme(repos):
         "",
     ]
 
-    if not repos:
+    if not workshops:
         lines.append("*No workshops found yet.*")
         lines.append("")
     else:
-        lines.append("<table>")
-        lines.append("  <thead>")
-        lines.append("    <tr>")
-        lines.append('      <th align="left">Workshop</th>')
-        lines.append('      <th align="left">Topics</th>')
-        lines.append('      <th align="center">Contributors</th>')
-        lines.append("    </tr>")
-        lines.append("  </thead>")
-        lines.append("  <tbody>")
+        lines.extend(build_table(workshops, repo_data, "Workshop"))
+        lines.append("")
 
-        for repo in sorted(repos, key=lambda r: r["name"].lower()):
-            name = repo["name"]
-            url = repo["html_url"]
-            description = repo.get("description") or ""
-
-            topics = get_topics(name)
-            contributors = get_contributors(name)
-
-            workshop_cell = f'<a href="{url}"><strong>{humanize_name(name)}</strong></a>'
-            if description:
-                workshop_cell += f"<br/><sub>{description}</sub>"
-
-            if topics:
-                badges_html = " ".join(make_badge(t) for t in topics)
-            else:
-                badges_html = "<sub><i>No topics set</i></sub>"
-
-            if contributors:
-                avatars_html = " ".join(
-                    make_contributor_avatar(c) for c in contributors[:10]
-                )
-            else:
-                avatars_html = "<sub><i>—</i></sub>"
-
-            lines.append("    <tr>")
-            lines.append(f"      <td>{workshop_cell}</td>")
-            lines.append(f"      <td>{badges_html}</td>")
-            lines.append(f'      <td align="center">{avatars_html}</td>')
-            lines.append("    </tr>")
-
-        lines.append("  </tbody>")
-        lines.append("</table>")
+    if resources:
+        lines.append("---")
+        lines.append("")
+        lines.append("## 🧰 Resources & Tools")
+        lines.append("")
+        lines.extend(build_table(resources, repo_data, "Resource"))
         lines.append("")
 
     lines.extend(
@@ -269,7 +293,8 @@ def generate_readme(repos):
             "1. Go to your repository on GitHub",
             "2. Click the ⚙️ gear icon next to **About** (top-right of the repo page)",
             '3. Add relevant topics (e.g. `acs`, `acm`, `service-mesh`, `gitops`, `tekton`, `devspaces`, `openshift`)',
-            "4. This page will update automatically on the next run",
+            f"4. Add the `{RESOURCE_TOPIC}` topic to list a repo under **Resources & Tools** instead of the workshop table",
+            "5. This page will update automatically on the next run",
             "",
             "</details>",
             "",
@@ -285,15 +310,30 @@ def main():
     print(f"Fetching repositories for {ORG}...")
     all_repos = get_all_repos()
 
-    workshop_repos = [
+    candidate_repos = [
         r
         for r in all_repos
         if r["name"] != ".github" and not r.get("archived", False)
     ]
 
-    print(f"Found {len(workshop_repos)} workshop(s)")
+    repo_data = {}
+    workshops = []
+    resources = []
 
-    readme_content = generate_readme(workshop_repos)
+    for repo in candidate_repos:
+        name = repo["name"]
+        topics = get_topics(name)
+        contributors = get_contributors(name)
+        repo_data[name] = (topics, contributors)
+
+        if RESOURCE_TOPIC in topics:
+            resources.append(repo)
+        else:
+            workshops.append(repo)
+
+    print(f"Found {len(workshops)} workshop(s) and {len(resources)} resource(s)")
+
+    readme_content = generate_readme(workshops, resources, repo_data)
 
     output = os.path.abspath(OUTPUT_PATH)
     os.makedirs(os.path.dirname(output), exist_ok=True)

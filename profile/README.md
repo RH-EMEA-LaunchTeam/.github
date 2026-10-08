@@ -50,6 +50,27 @@
 
 ---
 
+## 🧰 Resources & Tools
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Resource</th>
+      <th align="left">Topics</th>
+      <th align="center">Contributors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/RH-EMEA-LaunchTeam/rh-saa-skills"><strong>Rh Saa Skills</strong></a><br/><sub>A collaborative collection of AI Skills</sub></td>
+      <td><img src="https://img.shields.io/badge/ai-FF6F00?style=flat-square" alt="ai"> <img src="https://img.shields.io/badge/cursor%20skills-2D9CDB?style=flat-square" alt="cursor-skills"></td>
+      <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
 <details>
 <summary>ℹ️ How this page works</summary>
 
@@ -66,8 +87,9 @@ Topics appear as labels in the table above. To add them to your repo:
 1. Go to your repository on GitHub
 2. Click the ⚙️ gear icon next to **About** (top-right of the repo page)
 3. Add relevant topics (e.g. `acs`, `acm`, `service-mesh`, `gitops`, `tekton`, `devspaces`, `openshift`)
-4. This page will update automatically on the next run
+4. Add the `resource` topic to list a repo under **Resources & Tools** instead of the workshop table
+5. This page will update automatically on the next run
 
 </details>
 
-<sub>Last updated: 2026-10-08 12:44 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-10-08 13:14 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
