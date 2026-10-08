@@ -112,12 +112,39 @@ def get_topics(repo_name):
     return []
 
 
+def get_parent_repo(repo_name):
+    """If repo is a fork, return the parent's full_name (owner/repo), else None."""
+    data = github_api(f"/repos/{ORG}/{repo_name}")
+    if data and data.get("fork") and data.get("parent"):
+        return data["parent"]["full_name"]
+    return None
+
+
 def get_contributors(repo_name):
-    """Fetch contributors for a repository."""
-    data = github_api(f"/repos/{ORG}/{repo_name}/contributors")
-    if data and isinstance(data, list):
-        return [c for c in data if c.get("type") == "User"]
-    return []
+    """Fetch contributors for a repo. If it's a fork, include parent contributors too."""
+    fork_contributors = github_api(f"/repos/{ORG}/{repo_name}/contributors")
+    if not fork_contributors or not isinstance(fork_contributors, list):
+        fork_contributors = []
+
+    parent_full_name = get_parent_repo(repo_name)
+    parent_contributors = []
+    if parent_full_name:
+        print(f"  ↳ Fork of {parent_full_name}, fetching upstream contributors...")
+        data = github_api(f"/repos/{parent_full_name}/contributors?per_page=100")
+        if data and isinstance(data, list):
+            parent_contributors = data
+
+    seen = set()
+    merged = []
+    for c in fork_contributors + parent_contributors:
+        if c.get("type") != "User":
+            continue
+        login = c["login"]
+        if login not in seen:
+            seen.add(login)
+            merged.append(c)
+
+    return merged
 
 
 def make_badge(topic):
