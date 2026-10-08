@@ -27,17 +27,17 @@
   <tbody>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/air-gapped-acs-workshop"><strong>Air Gapped Acs Workshop</strong></a></td>
-      <td><sub><i>No topics set</i></sub></td>
+      <td><img src="https://img.shields.io/badge/acs-EE0000?style=flat-square" alt="acs"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/security-E97627?style=flat-square" alt="security"> <img src="https://img.shields.io/badge/workshop-8B5CF6?style=flat-square" alt="workshop"></td>
       <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=40" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
     </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/dev-spaces-workshop"><strong>Dev Spaces Workshop</strong></a><br/><sub>Hands-on workshop for Java development on OpenShift Dev Spaces</sub></td>
-      <td><sub><i>No topics set</i></sub></td>
+      <td><img src="https://img.shields.io/badge/devspaces-EE0000?style=flat-square" alt="devspaces"> <img src="https://img.shields.io/badge/java-F89820?style=flat-square" alt="java"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/workshop-8B5CF6?style=flat-square" alt="workshop"></td>
       <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=40" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
     </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/multi-cluster-app-distribution-demo"><strong>Multi Cluster App Distribution Demo</strong></a></td>
-      <td><sub><i>No topics set</i></sub></td>
+      <td><img src="https://img.shields.io/badge/acm-EE0000?style=flat-square" alt="acm"> <img src="https://img.shields.io/badge/demo-10B981?style=flat-square" alt="demo"> <img src="https://img.shields.io/badge/gitops-EE0000?style=flat-square" alt="gitops"> <img src="https://img.shields.io/badge/multi%20cluster-326CE5?style=flat-square" alt="multi-cluster"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"></td>
       <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=40" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
     </tr>
   </tbody>
@@ -60,9 +60,9 @@ Topics appear as labels in the table above. To add them to your repo:
 
 1. Go to your repository on GitHub
 2. Click the ⚙️ gear icon next to **About** (top-right of the repo page)
-3. Add relevant topics (e.g. `openshift`, `kubernetes`, `workshop`, `security`)
+3. Add relevant topics (e.g. `acs`, `acm`, `service-mesh`, `gitops`, `tekton`, `devspaces`, `openshift`)
 4. This page will update automatically on the next run
 
 </details>
 
-<sub>Last updated: 2026-10-08 12:00 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-10-08 12:04 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
