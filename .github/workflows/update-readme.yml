@@ -1,0 +1,52 @@
+name: Update Workshop Index
+
+on:
+  # Run daily at 06:00 UTC
+  schedule:
+    - cron: "0 6 * * *"
+
+  # Run on pushes to main
+  push:
+    branches: [main]
+
+  # Run when repos change in the org (requires org-level webhook or manual trigger)
+  repository_dispatch:
+    types: [repo_changed]
+
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update-readme.py
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet profile/README.md && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/README.md
+          git commit -m "docs: update workshop index [skip ci]"
+          git push
