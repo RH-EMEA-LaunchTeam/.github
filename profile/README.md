@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/orgs/RH-EMEA-LaunchTeam/repositories">
-    <img src="https://img.shields.io/badge/workshops-4-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
+    <img src="https://img.shields.io/badge/workshops-5-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
   </a>
 </p>
 
@@ -44,6 +44,11 @@
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/multi-cluster-app-distribution-demo"><strong>Multi Cluster App Distribution Demo</strong></a></td>
       <td><img src="https://img.shields.io/badge/acm-EE0000?style=flat-square" alt="acm"> <img src="https://img.shields.io/badge/demo-10B981?style=flat-square" alt="demo"> <img src="https://img.shields.io/badge/gitops-EE0000?style=flat-square" alt="gitops"> <img src="https://img.shields.io/badge/multi%20cluster-326CE5?style=flat-square" alt="multi-cluster"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"></td>
       <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/RH-EMEA-LaunchTeam/openshift-cma-minecraft"><strong>Openshift Cma Minecraft</strong></a><br/><sub>This repo contains all the elements needed to conduct an Openshift Custom Metric Autoscaler workshop</sub></td>
+      <td><sub><i>No topics set</i></sub></td>
+      <td align="center"><a href="https://github.com/demon86rm" title="demon86rm"><img src="https://avatars.githubusercontent.com/u/48250561?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="demon86rm"></a></td>
     </tr>
   </tbody>
 </table>
@@ -92,4 +97,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-11-03 13:03 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-11-04 13:19 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
