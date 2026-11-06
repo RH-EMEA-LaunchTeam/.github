@@ -27,7 +27,7 @@
   <tbody>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/acm-observability"><strong>Acm Observability</strong></a></td>
-      <td><sub><i>No topics set</i></sub></td>
+      <td><img src="https://img.shields.io/badge/acm-EE0000?style=flat-square" alt="acm"> <img src="https://img.shields.io/badge/demo-10B981?style=flat-square" alt="demo"> <img src="https://img.shields.io/badge/grafana-1A73E8?style=flat-square" alt="grafana"> <img src="https://img.shields.io/badge/multi%20cluster-326CE5?style=flat-square" alt="multi-cluster"> <img src="https://img.shields.io/badge/observability-1A73E8?style=flat-square" alt="observability"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/perses-1A73E8?style=flat-square" alt="perses"></td>
       <td align="center"><sub><i>—</i></sub></td>
     </tr>
     <tr>
@@ -52,7 +52,7 @@
     </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/openshift-app-lifecycle-workshop"><strong>Openshift App Lifecycle Workshop</strong></a><br/><sub>OpenShift application lifecycle workshop series: from 'docker run on a VM' to a repeatable monthly lifecycle</sub></td>
-      <td><sub><i>No topics set</i></sub></td>
+      <td><img src="https://img.shields.io/badge/acm-EE0000?style=flat-square" alt="acm"> <img src="https://img.shields.io/badge/acs-EE0000?style=flat-square" alt="acs"> <img src="https://img.shields.io/badge/containers-2496ED?style=flat-square" alt="containers"> <img src="https://img.shields.io/badge/gitops-EE0000?style=flat-square" alt="gitops"> <img src="https://img.shields.io/badge/oadp-EE0000?style=flat-square" alt="oadp"> <img src="https://img.shields.io/badge/observability-1A73E8?style=flat-square" alt="observability"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/python-3776AB?style=flat-square" alt="python"> <img src="https://img.shields.io/badge/tekton-FD495C?style=flat-square" alt="tekton"> <img src="https://img.shields.io/badge/workshop-8B5CF6?style=flat-square" alt="workshop"></td>
       <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
     </tr>
     <tr>
@@ -107,4 +107,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-11-06 14:10 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-11-06 14:19 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
