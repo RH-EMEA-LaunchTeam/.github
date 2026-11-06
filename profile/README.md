@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/orgs/RH-EMEA-LaunchTeam/repositories">
-    <img src="https://img.shields.io/badge/workshops-5-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
+    <img src="https://img.shields.io/badge/workshops-6-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
   </a>
 </p>
 
@@ -46,8 +46,13 @@
       <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/RH-EMEA-LaunchTeam/openshift-cma-minecraft"><strong>Openshift Cma Minecraft</strong></a><br/><sub>This repo contains all the elements needed to conduct an Openshift Custom Metric Autoscaler workshop</sub></td>
+      <td><a href="https://github.com/RH-EMEA-LaunchTeam/openshift-app-lifecycle-workshop"><strong>Openshift App Lifecycle Workshop</strong></a><br/><sub>OpenShift application lifecycle workshop series: from 'docker run on a VM' to a repeatable monthly lifecycle</sub></td>
       <td><sub><i>No topics set</i></sub></td>
+      <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/RH-EMEA-LaunchTeam/openshift-cma-minecraft"><strong>Openshift Cma Minecraft</strong></a><br/><sub>This repo contains all the elements needed to conduct an Openshift Custom Metric Autoscaler workshop</sub></td>
+      <td><img src="https://img.shields.io/badge/custom%20metrics%20autoscaler-1A73E8?style=flat-square" alt="custom-metrics-autoscaler"> <img src="https://img.shields.io/badge/golang-1A73E8?style=flat-square" alt="golang"> <img src="https://img.shields.io/badge/keda-1A73E8?style=flat-square" alt="keda"> <img src="https://img.shields.io/badge/minecraft-1A73E8?style=flat-square" alt="minecraft"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/workshop-8B5CF6?style=flat-square" alt="workshop"></td>
       <td align="center"><a href="https://github.com/demon86rm" title="demon86rm"><img src="https://avatars.githubusercontent.com/u/48250561?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="demon86rm"></a></td>
     </tr>
   </tbody>
@@ -97,4 +102,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-11-05 13:31 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-11-06 12:39 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
