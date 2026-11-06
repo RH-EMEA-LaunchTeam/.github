@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/orgs/RH-EMEA-LaunchTeam/repositories">
-    <img src="https://img.shields.io/badge/workshops-6-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
+    <img src="https://img.shields.io/badge/workshops-7-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
   </a>
 </p>
 
@@ -25,6 +25,11 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://github.com/RH-EMEA-LaunchTeam/acm-observability"><strong>Acm Observability</strong></a></td>
+      <td><sub><i>No topics set</i></sub></td>
+      <td align="center"><sub><i>—</i></sub></td>
+    </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/air-gapped-acs-workshop"><strong>Air Gapped Acs Workshop</strong></a></td>
       <td><img src="https://img.shields.io/badge/acs-EE0000?style=flat-square" alt="acs"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/security-E97627?style=flat-square" alt="security"> <img src="https://img.shields.io/badge/workshop-8B5CF6?style=flat-square" alt="workshop"></td>
@@ -102,4 +107,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-11-06 13:16 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-11-06 14:10 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
