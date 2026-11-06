@@ -313,7 +313,11 @@ def main():
     candidate_repos = [
         r
         for r in all_repos
-        if r["name"] != ".github" and not r.get("archived", False)
+        if r["name"] != ".github"
+        and not r.get("archived", False)
+        # Never list private repos, even if the API or token scope changes
+        and not r.get("private", False)
+        and r.get("visibility", "public") == "public"
     ]
 
     repo_data = {}
