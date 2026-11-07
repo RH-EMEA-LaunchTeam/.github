@@ -28,7 +28,7 @@
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/acm-observability"><strong>Acm Observability</strong></a></td>
       <td><img src="https://img.shields.io/badge/acm-EE0000?style=flat-square" alt="acm"> <img src="https://img.shields.io/badge/demo-10B981?style=flat-square" alt="demo"> <img src="https://img.shields.io/badge/grafana-1A73E8?style=flat-square" alt="grafana"> <img src="https://img.shields.io/badge/multi%20cluster-326CE5?style=flat-square" alt="multi-cluster"> <img src="https://img.shields.io/badge/observability-1A73E8?style=flat-square" alt="observability"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/perses-1A73E8?style=flat-square" alt="perses"></td>
-      <td align="center"><sub><i>—</i></sub></td>
+      <td align="center"><a href="https://github.com/luisevm" title="luisevm"><img src="https://avatars.githubusercontent.com/u/12910087?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="luisevm"></a></td>
     </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/air-gapped-acs-workshop"><strong>Air Gapped Acs Workshop</strong></a></td>
@@ -86,4 +86,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-11-06 14:30 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-11-07 11:57 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
