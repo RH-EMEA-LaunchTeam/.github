@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/orgs/RH-EMEA-LaunchTeam/repositories">
-    <img src="https://img.shields.io/badge/workshops-7-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
+    <img src="https://img.shields.io/badge/workshops-8-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Total workshops">
   </a>
 </p>
 
@@ -34,6 +34,11 @@
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/air-gapped-acs-workshop"><strong>Air Gapped Acs Workshop</strong></a></td>
       <td><img src="https://img.shields.io/badge/acs-EE0000?style=flat-square" alt="acs"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/security-E97627?style=flat-square" alt="security"> <img src="https://img.shields.io/badge/workshop-8B5CF6?style=flat-square" alt="workshop"></td>
       <td align="center"><a href="https://github.com/juanlu-sanz" title="juanlu-sanz"><img src="https://avatars.githubusercontent.com/u/1322888?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="juanlu-sanz"></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/RH-EMEA-LaunchTeam/container-security-best-practices"><strong>Container Security Best Practices</strong></a><br/><sub>A 90-minute, developer-focused workshop on container security for applications running on Red Hat OpenShift</sub></td>
+      <td><sub><i>No topics set</i></sub></td>
+      <td align="center"><a href="https://github.com/demon86rm" title="demon86rm"><img src="https://avatars.githubusercontent.com/u/48250561?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="demon86rm"></a></td>
     </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/dev-spaces-workshop"><strong>Dev Spaces Workshop</strong></a><br/><sub>Hands-on workshop for Java development on OpenShift Dev Spaces</sub></td>
@@ -86,4 +91,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-11-09 14:25 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-11-10 13:49 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
