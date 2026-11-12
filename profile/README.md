@@ -37,7 +37,7 @@
     </tr>
     <tr>
       <td><a href="https://github.com/RH-EMEA-LaunchTeam/container-security-best-practices"><strong>Container Security Best Practices</strong></a><br/><sub>A 90-minute, developer-focused workshop on container security for applications running on Red Hat OpenShift</sub></td>
-      <td><sub><i>No topics set</i></sub></td>
+      <td><img src="https://img.shields.io/badge/best%20practices-1A73E8?style=flat-square" alt="best-practices"> <img src="https://img.shields.io/badge/dora-1A73E8?style=flat-square" alt="dora"> <img src="https://img.shields.io/badge/openshift-EE0000?style=flat-square" alt="openshift"> <img src="https://img.shields.io/badge/security-E97627?style=flat-square" alt="security"></td>
       <td align="center"><a href="https://github.com/demon86rm" title="demon86rm"><img src="https://avatars.githubusercontent.com/u/48250561?v=4&s=120" width="40" height="40" style="border-radius:50%" alt="demon86rm"></a></td>
     </tr>
     <tr>
@@ -91,4 +91,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-11-11 12:59 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-11-12 14:01 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
