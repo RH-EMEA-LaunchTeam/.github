@@ -96,4 +96,4 @@ Topics appear as labels in the table above. To add them to your repo:
 
 </details>
 
-<sub>Last updated: 2026-11-23 16:33 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
+<sub>Last updated: 2026-11-24 16:32 UTC · <a href="https://github.com/RH-EMEA-LaunchTeam/.github/actions">View workflow runs</a></sub>
